@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'BalooBhaijaan2';
+  src: url('/css/fonts/BalooBhaijaan2-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ======= BOTÕES ======= */
+.btn-service {
+  text-decoration: none;
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.btn-service:hover {
+  color: #ff3d36 !important;
+  cursor: pointer;
+}
+
+/* ======= BANNERS ======= */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.banner-horizontal {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.img-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-side {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  z-index: 1;
+}
+
+.text-container {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ======= SERVICES ======= */
+.card img {
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 2px solid #ffca2c;
+}
+
+.card-title {
+  color: #ffca2c;
+}
+
+.body-color {
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+/* ======= CONTATOS ======= */
+.contato-container {
+  max-width: 600px;
+  margin: 40px auto 0 auto; /* Centralizado e sem espaço inferior */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contato-container h2 {
+  color: #ff5c00;
+  margin-bottom: 10px;
+}
+
+.contato-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: #ff5c00;
+  outline: none;
+}
+
+.contato-form button {
+  background-color: #ffca2c;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+  background-color: #ff5c00;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+/* ======= FONTE ======= */
+.text-modify {
+  font-family: 'BalooBhaijaan2', sans-serif;
+}
+
+/* ======= LAYOUT GLOBAL ======= */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* empurra o footer para o fim da tela */
+}
